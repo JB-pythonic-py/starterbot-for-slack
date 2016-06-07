@@ -20,6 +20,8 @@ def handler(firehose):
                 sc.rtm_send_message(channel, str(randint(100000, 200000)))  # Checking for multiple instances
                 for message in recent_comments:  # Showing messages in recent_comments
                     sc.rtm_send_message(channel, message)
+                sc.rtm_send_message(channel, "https://github.com/JB-pythonic-py/starterbot-for-slack")
+
 
             #  There might be a better way to do this, but I'm using list comprehension to prevent false positive chat.
 
